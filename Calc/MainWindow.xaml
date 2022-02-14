@@ -48,42 +48,40 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
-                    <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="7*"></ColumnDefinition>
-                    <ColumnDefinition Width="123*"/>
-                    <ColumnDefinition Width="130*"></ColumnDefinition>
-                    <ColumnDefinition Width="130*"></ColumnDefinition>
-                    <ColumnDefinition Width="130*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Row="0" Grid.Column="0"  Content="A"  Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="0,0,129.2,0"></Button>
-                <Button Grid.Row="1" Grid.Column="0"  Content="B" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="0,0,129.2,0"></Button>
-                <Button Grid.Row="2" Grid.Column="0"  Content="C" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="0,0,129.2,0"></Button>
-                <Button Grid.Row="3" Grid.Column="0"  Content="D" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="0,0,129.2,0"></Button>
-                <Button Grid.Row="4" Grid.Column="0"  Content="E" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="0,0,129.2,0.2"></Button>
-                <Button Grid.Row="4" Grid.Column="0"  Content="F" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="0,23,129.2,0.4" Grid.RowSpan="2"></Button>
+                <Button Grid.Row="0" Grid.Column="0"  Content="A"  Click="CalcButtonOnClick"></Button>
+                <Button Grid.Row="1" Grid.Column="0"  Content="B" Click="CalcButtonOnClick"></Button>
+                <Button Grid.Row="2" Grid.Column="0"  Content="C" Click="CalcButtonOnClick"></Button>
+                <Button Grid.Row="3" Grid.Column="0"  Content="D" Click="CalcButtonOnClick"></Button>
+                <Button Grid.Row="4" Grid.Column="0"  Content="E" Click="CalcButtonOnClick"></Button>
+                <Button Grid.Row="4" Grid.Column="0"  Content="F" Click="CalcButtonOnClick"></Button>
 
-                <Button Grid.Row="0" Grid.Column="2"  Content="(" Click="CalcButtonOnClick" Margin="0.4,0,0.2,0"></Button>
-                <Button Grid.Row="1" Grid.Column="2"  Content="+" Click="CalcButtonOnClick" Margin="0.4,0,0.2,0"></Button>
-                <Button Grid.Row="2" Grid.Column="2"  Content="7" Click="CalcButtonOnClick" Margin="0.4,0,0.2,0"></Button>
-                <Button Grid.Row="3" Grid.Column="2"  Content="4" Click="CalcButtonOnClick" Margin="0.4,0,0.2,0"></Button>
-                <Button Grid.Row="4" Grid.Column="2"  Content="1" Click="CalcButtonOnClick" Margin="0.4,0,0.2,0.2"></Button>
-                <Button Grid.Row="4" Grid.Column="2"  Content="Clear" Click="CalcButtonOnClick" Margin="0.4,23,0.2,0.4" Grid.RowSpan="2" ></Button>
+                <Button Grid.Row="0" Grid.Column="1"  Content="(" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="1" Grid.Column="1"  Content="+" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="2" Grid.Column="1"  Content="7" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="3" Grid.Column="1"  Content="4" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="4" Grid.Column="1"  Content="1" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="4" Grid.Column="1"  Content="Clear" Click="CalcButtonOnClick" ></Button>
 
-                <Button Grid.Row="0" Grid.Column="2"  Content=")" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="129.4,0"></Button>
-                <Button Grid.Row="1" Grid.Column="2"  Content="-" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="129.4,0"></Button>
-                <Button Grid.Row="2" Grid.Column="2"  Content="8" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="129.4,0"></Button>
-                <Button Grid.Row="3" Grid.Column="2"  Content="5" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="129.4,0"></Button>
-                <Button Grid.Row="4" Grid.Column="2"  Content="2" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="129.4,0,129.4,0.2"></Button>
-                <Button Grid.Row="4" Grid.Column="2"  Content="0" Click="CalcButtonOnClick" Grid.ColumnSpan="3" Margin="129.4,23,129.4,0.4" Grid.RowSpan="2"></Button>
+                <Button Grid.Row="0" Grid.Column="2"  Content=")" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="1" Grid.Column="2"  Content="-" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="2" Grid.Column="2"  Content="8" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="3" Grid.Column="2"  Content="5" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="4" Grid.Column="2"  Content="2" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="4" Grid.Column="2"  Content="0" Click="CalcButtonOnClick" ></Button>
 
-                <Button Grid.Row="0" Grid.Column="4"  Content="/" Click="CalcButtonOnClick" Margin="0.2,0,0.4,0"></Button>
-                <Button Grid.Row="1" Grid.Column="4"  Content="*" Click="CalcButtonOnClick" Margin="0.2,0,0.4,0"></Button>
-                <Button Grid.Row="2" Grid.Column="4"  Content="9" Click="CalcButtonOnClick" Margin="0.2,0,0.4,0"></Button>
-                <Button Grid.Row="3" Grid.Column="4"  Content="6" Click="CalcButtonOnClick" Margin="0.2,0,0.4,0"></Button>
-                <Button Grid.Row="4" Grid.Column="4"  Content="3" Click="CalcButtonOnClick" Margin="0.2,0,0.4,0.2"></Button>
-                <Button Grid.Row="4" Grid.Column="4"  Content="=" Click="CalcButtonOnClick" Margin="0.2,23,0.4,0.4" Grid.RowSpan="2"></Button>
+                <Button Grid.Row="0" Grid.Column="3"  Content="/" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="1" Grid.Column="3"  Content="*" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="2" Grid.Column="3"  Content="9" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="3" Grid.Column="3"  Content="6" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="4" Grid.Column="3"  Content="3" Click="CalcButtonOnClick" ></Button>
+                <Button Grid.Row="4" Grid.Column="3"  Content="=" Click="CalcButtonOnClick" ></Button>
 
             </Grid>
         </DockPanel>
