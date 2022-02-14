@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Calculator.Properties
+namespace Calc.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
@@ -45,7 +45,7 @@ namespace Calculator.Properties
                 if ((resourceMan == null))
                 {
                     global::System.Resources.ResourceManager temp =
-                        new global::System.Resources.ResourceManager("Calculator.Properties.Resources",
+                        new global::System.Resources.ResourceManager("Calc.Properties.Resources",
                             typeof(Resources).Assembly);
                     resourceMan = temp;
                 }

@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calc
 {
     /// <summary>
     /// Interaction logic for App.xaml

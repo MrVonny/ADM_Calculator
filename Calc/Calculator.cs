@@ -1,20 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using NCalc;
 
-namespace Calculator
+namespace Calc
 {
-    public static class  Calculator
+    public static class Calculator
     {
-
+        public static string ArbitraryToArbitrarySystemExpression(string expression, int from, int to)
+        {
+            MatchEvaluator evaluator = match => ArbitraryToArbitrarySystem(match.Value, from, to);
+            return Regex.Replace(expression, @"[\dABCDEF]+", evaluator);
+        }
         public static string Get(string expression, int notation)
         {
-            throw new NotImplementedException();
+            MatchEvaluator evaluator = match => ArbitraryToArbitrarySystem(match.Value, notation, 10);
+            var expression10 = Regex.Replace(expression, @"[\dABCDEF]+", evaluator);
+            var resut =  new Expression(expression10).Evaluate();
+            return DecimalToArbitrarySystem((int)resut, notation);
         }
-        
+
         public static string ArbitraryToArbitrarySystem(string number, int from, int to)
         {
             return DecimalToArbitrarySystem(ArbitraryToDecimalSystem(number, from), to);
         }
-        
+
         public static string DecimalToArbitrarySystem(long decimalNumber, int radix)
         {
             const int BitsInLong = 64;
@@ -46,7 +56,7 @@ namespace Calculator
 
             return result;
         }
-        
+
         public static long ArbitraryToDecimalSystem(string number, int radix)
         {
             const string Digits = "0123456789ABCDEF";
