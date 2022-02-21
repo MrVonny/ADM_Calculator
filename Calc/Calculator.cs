@@ -19,7 +19,7 @@ namespace Calc
             var exp = new Expression(expression10);
             exp.Options = EvaluateOptions.RoundAwayFromZero;
             var res = exp.Evaluate();
-            return DecimalToArbitrarySystem((int)(double)res, notation);
+            return DecimalToArbitrarySystem((int)Convert.ToDouble(res.ToString()), notation);
         }
 
         public static string ArbitraryToArbitrarySystem(string number, int from, int to)
