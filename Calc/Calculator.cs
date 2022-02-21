@@ -16,8 +16,10 @@ namespace Calc
         {
             MatchEvaluator evaluator = match => ArbitraryToArbitrarySystem(match.Value, notation, 10);
             var expression10 = Regex.Replace(expression, @"[\dABCDEF]+", evaluator);
-            var resut =  new Expression(expression10).Evaluate();
-            return DecimalToArbitrarySystem((int)resut, notation);
+            var exp = new Expression(expression10);
+            exp.Options = EvaluateOptions.RoundAwayFromZero;
+            var res = exp.Evaluate();
+            return DecimalToArbitrarySystem((int)(double)res, notation);
         }
 
         public static string ArbitraryToArbitrarySystem(string number, int from, int to)
@@ -68,7 +70,7 @@ namespace Calc
             if (String.IsNullOrEmpty(number))
                 return 0;
 
-            // Make sure the arbitrary numeral system number is in upper case
+           
             number = number.ToUpperInvariant();
 
             long result = 0;
@@ -78,7 +80,7 @@ namespace Calc
                 char c = number[i];
                 if (i == 0 && c == '-')
                 {
-                    // This is the negative sign symbol
+                 
                     result = -result;
                     break;
                 }
